@@ -1,0 +1,10 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order
+  #注册进Zookeeper,Zookeeper属于ap分支，当服务一段时间不存在是，会自动去掉服务
+  cloud:
+    zookeeper:
+      connect-string: 192.168.235.128:2181
